@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from "../../assets/images/logo.png";
+import logoamazon from '../../assets/images/logoamazon.png';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
@@ -9,10 +9,10 @@ import { useSelector, useDispatch } from 'react-redux'
 const NavBar = () => {
   const count = useSelector((state) => state.counter.value)
   return (
- <div className='bg-black flex justify-between text-white items-center py-1'>
+ <div className='bg-slate-800 flex justify-between text-white items-center py-1'>
   {/* logo */}
-  <div className='h-10 w-10'>
-    <img className='h-15 w-15' src={logo} alt='logo'/>
+  <div className='h-10 w-15 item-center flex'>
+    <img className='h-15 w-15' src={logoamazon} alt='logo'/>
   </div>
   {/* delivery */}
   <div className='flex items-center'>
